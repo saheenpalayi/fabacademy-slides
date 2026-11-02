@@ -1,32 +1,92 @@
-<p align="center">
-  <a href="https://revealjs.com">
-  <img src="https://hakim-static.s3.amazonaws.com/reveal-js/logo/v1/reveal-black-text-sticker.png" alt="reveal.js" width="500">
-  </a>
-  <br><br>
-  <a href="https://github.com/hakimel/reveal.js/actions"><img src="https://github.com/hakimel/reveal.js/actions/workflows/test.yml/badge.svg"></a>
-  <a href="https://slides.com/"><img src="https://static.slid.es/images/slides-github-banner-320x40.png?1" alt="Slides" width="160" height="20"></a>
-</p>
+# Fab Academy – Local Class Slides
 
-reveal.js is an open source HTML presentation framework. It enables anyone with a web browser to create beautiful presentations for free. Check out the live demo at [revealjs.com](https://revealjs.com/).
+🔗 **Live site:** https://saheenpalayi.github.io/fabacademy-slides/
 
-The framework comes with a powerful feature set including [nested slides](https://revealjs.com/vertical-slides/), [Markdown support](https://revealjs.com/markdown/), [Auto-Animate](https://revealjs.com/auto-animate/), [PDF export](https://revealjs.com/pdf-export/), [speaker notes](https://revealjs.com/speaker-view/), [LaTeX typesetting](https://revealjs.com/math/), [syntax highlighted code](https://revealjs.com/code/) and an [extensive API](https://revealjs.com/api/).
+Built with [reveal.js](https://revealjs.com) (MIT, © Hakim El Hattab – see `LICENSE`).
+
+One reveal.js project for all classes.
+
+```
+reveal.js/                ← this project (run with npm)
+├── index.html            ← landing page (list of classes)
+├── assets/
+│   ├── index.css         ← landing page styles
+│   ├── deck.css          ← shared slide styles (all classes)
+│   └── deck.js           ← shared Reveal settings + "← All classes" button
+├── dist/                 ← reveal.js built files – don't edit
+├── class-01/
+│   ├── index.html        ← loads the deck (rarely needs editing)
+│   ├── slides.md         ← ✏️ write your slides here
+│   └── images/           ← images for this class
+├── class-02/ … class-09/
+└── index.old.html        ← backup of your earlier index.html (not published)
+```
+
+## Run it
+
+```bash
+npm install     # first time only
+npm start
+```
+
+Then open http://localhost:8000 – pages reload automatically when you save.
+
+⚠️ Don't run `npm run build` – it rebuilds reveal.js itself and wipes `dist/`.
+
+## Writing slides (slides.md)
+
+```markdown
+# Title slide
 
 ---
 
-Want to create reveal.js presentation in a graphical editor? Try <https://slides.com>. It's made by the same people behind reveal.js.
+## Next slide (→)
 
----
+- bullet
 
-### Getting started
+--
 
-- 🚀 [Install reveal.js](https://revealjs.com/installation)
-- 👀 [View the demo presentation](https://revealjs.com/demo)
-- 📖 [Read the documentation](https://revealjs.com/markup/)
-- 🖌 [Try the visual editor for reveal.js at Slides.com](https://slides.com/)
-- 🎬 [Watch the reveal.js video course (paid)](https://revealjs.com/course)
+### Slide below (↓)
 
----
+![](images/photo.jpg)
 
-<div align="center">
-  MIT licensed | Copyright © 2011-2026 Hakim El Hattab, https://hakim.se
-</div>
+Note:
+Speaker notes – press S during the talk.
+```
+
+- `---` on its own line → new horizontal slide
+- `--` on its own line → vertical slide underneath
+- HTML works inside Markdown too (`<p class="subtitle">…</p>`)
+
+## Adding a class
+
+1. Copy `class-09` → `class-10`, edit its `slides.md` and the `<title>` in `index.html`
+2. Copy a `<a class="card">` block in the root `index.html` and point it to `class-10/`
+
+## Changing the look
+
+- Theme for one class: change `theme/white.css` in that class's `index.html`
+  (options in `dist/theme/`: black, league, night, moon, simple, …)
+- Tweaks for all classes: `assets/deck.css`
+- Settings for all classes (slide numbers, transitions…): `assets/deck.js`
+
+## Keyboard
+
+`→ ↓` next · `Esc` overview · `S` speaker notes · `F` fullscreen · `Ctrl+Shift+F` search · `Alt+click` zoom
+
+## Export to PDF
+
+With `npm start` running, open a class with `?print-pdf` at the end of the URL, e.g.
+`http://localhost:8000/class-01/?print-pdf`, then print → Save as PDF.
+
+## Hosting
+
+The site is published with **GitHub Pages** from the `main` branch. To update the live slides:
+
+```bash
+git add .
+git commit -m "Update class 02 slides"
+git push
+```
+
+The live site refreshes about a minute after each push.

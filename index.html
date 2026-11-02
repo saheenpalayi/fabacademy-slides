@@ -1,43 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta
-			name="viewport"
-			content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
-		/>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Fab Academy · Local Classes</title>
+	<link rel="stylesheet" href="assets/index.css" />
+</head>
+<body>
+	<header>
+		<p class="eyebrow">Fab Academy · Local Sessions</p>
+		<h1>Class Slides</h1>
+		<p class="lead">Pick a class to open its slides. Use the arrow keys to move through a deck, <kbd>Esc</kbd> for an overview, and <kbd>S</kbd> for speaker notes.</p>
+	</header>
 
-		<title>reveal.js</title>
+	<main class="grid">
+		<!--
+			One card per class. To add a class:
+			1. copy a class-XX folder and rename it
+			2. copy one <a class="card"> block below and change the link + text
+		-->
+		<a class="card" href="class-01/">
+			<span class="num">01</span>
+			<h2>Principles and Practices &amp; Project Management</h2>
+			<p>Final project ideas, git, and building your documentation site.</p>
+		</a>
+		<a class="card" href="class-02/">
+			<span class="num">02</span>
+			<h2>Computer-Aided Design</h2>
+			<p>2D and 3D modelling tools, parametric design.</p>
+		</a>
+		<a class="card" href="class-03/">
+			<span class="num">03</span>
+			<h2>Computer-Controlled Cutting</h2>
+			<p>Laser cutting, vinyl cutting, press-fit kits.</p>
+		</a>
+		<a class="card" href="class-04/">
+			<span class="num">04</span>
+			<h2>Embedded Programming</h2>
+			<p>Microcontrollers, datasheets, toolchains.</p>
+		</a>
+		<a class="card" href="class-05/">
+			<span class="num">05</span>
+			<h2>3D Scanning and Printing</h2>
+			<p>Additive processes, design rules, scanning.</p>
+		</a>
+		<a class="card" href="class-06/">
+			<span class="num">06</span>
+			<h2>Electronics Design</h2>
+			<p>Schematics, PCB layout, simulation.</p>
+		</a>
+		<a class="card" href="class-07/">
+			<span class="num">07</span>
+			<h2>Computer-Controlled Machining</h2>
+			<p>CNC routing, toolpaths, making something big.</p>
+		</a>
+		<a class="card" href="class-08/">
+			<span class="num">08</span>
+			<h2>Electronics Production</h2>
+			<p>PCB milling, soldering, testing boards.</p>
+		</a>
+		<a class="card" href="class-09/">
+			<span class="num">09</span>
+			<h2>Input Devices</h2>
+			<p>Sensors and reading them with a microcontroller.</p>
+		</a>
+	</main>
 
-		<link rel="stylesheet" href="dist/reset.css" />
-		<link rel="stylesheet" href="dist/reveal.css" />
-		<link rel="stylesheet" href="dist/theme/black.css" />
-
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="dist/plugin/highlight/monokai.css" />
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
-		</div>
-
-		<script src="dist/reveal.js"></script>
-		<script src="dist/plugin/notes.js"></script>
-		<script src="dist/plugin/markdown.js"></script>
-		<script src="dist/plugin/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
-
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
-			});
-		</script>
-	</body>
+	<footer>Built with reveal.js</footer>
+</body>
 </html>

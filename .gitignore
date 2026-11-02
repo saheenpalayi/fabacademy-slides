@@ -15,3 +15,5 @@ dist/reveal.es5.js
 react/dist
 react/demo/dist
 dev.html
+# local backup, not published
+index.old.html

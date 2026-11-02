@@ -1,0 +1,124 @@
+/* Shared tweaks applied on top of the Reveal theme in every class deck. */
+
+:root {
+	--fab-accent: #e8432e;
+}
+
+.reveal h1,
+.reveal h2,
+.reveal h3 {
+	text-transform: none;
+}
+
+.reveal .accent {
+	color: var(--fab-accent);
+}
+
+.reveal .subtitle {
+	font-size: 0.7em;
+	opacity: 0.6;
+}
+
+.reveal ul {
+	display: block; /* left-align bullet lists */
+}
+
+.reveal img.photo {
+	max-height: 60vh;
+	border-radius: 6px;
+}
+
+.home-link {
+	position: fixed;
+	top: 14px;
+	left: 16px;
+	z-index: 30;
+	font: 600 14px/1 system-ui, -apple-system, sans-serif;
+	padding: 8px 12px;
+	border-radius: 999px;
+	text-decoration: none;
+	color: #222;
+	background: rgba(255, 255, 255, 0.85);
+	border: 1px solid rgba(0, 0, 0, 0.12);
+	opacity: 0.55;
+	transition: opacity 0.2s;
+}
+.home-link:hover {
+	opacity: 1;
+}
+/* Hide the button when printing to PDF */
+@media print {
+	.home-link {
+		display: none;
+	}
+}
+
+/* ---- Layout helpers for slides ---- */
+.reveal .small {
+	font-size: 0.75em;
+}
+.reveal .two-col,
+.reveal .three-col {
+	display: grid;
+	gap: 24px;
+	text-align: left;
+	font-size: 0.75em;
+}
+.reveal .two-col {
+	grid-template-columns: 1fr 1fr;
+}
+.reveal .three-col {
+	grid-template-columns: 1fr 1fr 1fr;
+}
+.reveal .box {
+	padding: 16px 20px;
+	border: 1px solid rgba(0, 0, 0, 0.12);
+	border-radius: 10px;
+	background: rgba(0, 0, 0, 0.02);
+}
+.reveal .box h3 {
+	margin-top: 0;
+	font-size: 1.1em;
+}
+.reveal .box pre {
+	width: 100%;
+	font-size: 0.8em;
+}
+.reveal ul.checklist {
+	list-style: none;
+}
+.reveal ul.checklist li::before {
+	content: '☐ ';
+	color: var(--fab-accent);
+}
+.reveal pre code {
+	max-height: 520px;
+}
+.reveal kbd {
+	font-size: 0.8em;
+	padding: 2px 8px;
+	border: 1px solid #bbb;
+	border-radius: 4px;
+}
+
+/* ---- Sizing: a bit smaller than the theme default so content fits ---- */
+:root {
+	--r-main-font-size: 34px;
+	--r-heading2-size: 1.6em;
+	--r-heading3-size: 1.2em;
+}
+.reveal pre {
+	width: 100%;
+	font-size: 0.6em;
+	box-shadow: none;
+	border-radius: 8px;
+	overflow: hidden;
+}
+.reveal pre.small {
+	font-size: 0.55em;
+}
+.reveal pre code {
+	padding: 14px 18px;
+	white-space: pre-wrap;
+	border-radius: 8px;
+}
