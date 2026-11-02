@@ -81,7 +81,7 @@ With `npm start` running, open a class with `?print-pdf` at the end of the URL, 
 
 ## Hosting
 
-The site is published with **GitHub Pages** from the `main` branch. To update the live slides:
+The site is published to **GitHub Pages** by `.github/workflows/pages.yml` on every push to `main` (Settings → Pages → Source: **GitHub Actions**). To update the live slides:
 
 ```bash
 git add .
