@@ -1,4 +1,4 @@
-# Embedded Programming
+# Input Devices
 
 <p class="subtitle">Fab Academy · Class 04</p>
 

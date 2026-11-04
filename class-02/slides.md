@@ -1,4 +1,4 @@
-# Computer-Aided Design
+# Embedded Programming
 
 <p class="subtitle">Fab Academy · Class 02</p>
 

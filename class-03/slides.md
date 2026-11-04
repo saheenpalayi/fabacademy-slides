@@ -1,4 +1,4 @@
-# Computer-Controlled Cutting
+# Computer-Controlled Machining
 
 <p class="subtitle">Fab Academy · Class 03</p>
 

@@ -1,4 +1,4 @@
-# Computer-Controlled Machining
+# Applications and Implications / Project Development
 
 <p class="subtitle">Fab Academy · Class 07</p>
 

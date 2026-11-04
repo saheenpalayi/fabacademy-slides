@@ -18,7 +18,7 @@ reveal.js/                ← this project (run with npm)
 │   ├── index.html        ← loads the deck (rarely needs editing)
 │   ├── slides.md         ← ✏️ write your slides here
 │   └── images/           ← images for this class
-├── class-02/ … class-09/
+├── class-02/ … class-08/
 └── index.old.html        ← backup of your earlier index.html (not published)
 ```
 
@@ -60,8 +60,8 @@ Speaker notes – press S during the talk.
 
 ## Adding a class
 
-1. Copy `class-09` → `class-10`, edit its `slides.md` and the `<title>` in `index.html`
-2. Copy a `<a class="card">` block in the root `index.html` and point it to `class-10/`
+1. Copy `class-08` → `class-09`, edit its `slides.md` and the `<title>` in `index.html`
+2. Copy a `<a class="card">` block in the root `index.html` and point it to `class-09/`
 
 ## Changing the look
 

@@ -1,4 +1,4 @@
-# 3D Scanning and Printing
+# Networking and Communications
 
 <p class="subtitle">Fab Academy · Class 05</p>
 

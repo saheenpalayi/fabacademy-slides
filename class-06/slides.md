@@ -1,4 +1,4 @@
-# Electronics Design
+# System Integration
 
 <p class="subtitle">Fab Academy · Class 06</p>
 
