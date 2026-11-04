@@ -144,7 +144,10 @@ big enough to show you can machine **safely**
 ### Protective equipment
 
 <div class="img-text">
+<figure>
 <img class="photo" src="images/ppe.jpg" alt="Ear defenders, safety goggles, dust mask and gloves" />
+<figcaption>Image: <a href="https://fabacademy.org/2025/labs/kochi/">Fab Academy 2025 · Fab Lab Kochi</a></figcaption>
+</figure>
 <div>
 
 - 🎧 **Ear defenders** – routers are loud, wear them the whole time
@@ -162,11 +165,21 @@ Pass the PPE around. Show where it's kept in the lab.
 
 ### Rules while the machine runs
 
+<div class="img-text">
+<figure>
+<img class="photo" src="images/estop.jpg" alt="ShopBot control box with START, RESET and red emergency stop button" />
+<figcaption>Image: <a href="https://fabacademy.org/2025/labs/kochi/">Fab Academy 2025 · Fab Lab Kochi</a></figcaption>
+</figure>
+<div>
+
 - Know where the **emergency stop** is – before you start
 - **Never leave** the machine while it's cutting
 - Keep your **hands out** of the work area
-- Use your senses: **look, listen, smell** – stop if it sounds or smells wrong
-- Not feeling alert today? **Don't operate.** Ask for help when unsure
+- **Look, listen, smell** – stop if anything seems wrong
+- Not alert today? **Don't operate.** Ask for help
+
+</div>
+</div>
 
 Note:
 Walk students to the E-stop and spindle switch. Demonstrate the stop/pause on the keypad / ShopBot software.
@@ -183,22 +196,19 @@ Walk students to the E-stop and spindle switch. Demonstrate the stop/pause on th
 
 ### Our machine: ShopBot
 
-<div class="two-col">
-<div class="box">
+<div class="img-text">
+<figure>
+<img class="photo" src="images/shopbot.jpg" alt="ShopBot with X, Y and Z axes, spindle, vacuum tube and sacrificial layer labelled" />
+<figcaption>Image: <a href="https://fabacademy.org/2023/labs/kochi/students/sibin-ks/assignments/week07/week07.html">Sibin K S · Fab Academy 2023, Fab Lab Kochi</a></figcaption>
+</figure>
+<div>
 
-**Parts**
-- Gantry moving in **X / Y**, spindle moving in **Z**
-- Spindle – holds and spins the end mill
-- Bed + **sacrificial layer** (spoilboard)
-- Dust collection shoe
+- Gantry moves in **X / Y**, spindle moves in **Z**
+- **Spindle** holds and spins the end mill
+- **Vacuum tube** clears the chips and dust
+- **Sacrificial layer** protects the bed – you cut into it
 
-</div>
-<div class="box">
-
-**Software**
-- **ShopBot Control** – runs the machine
-- Toolpath files: `.sbp` (ShopBot) or G-code `.g`
-- Keypad – jog the axes by hand
+**Software**: **ShopBot Control** runs the machine · files are `.sbp` or G-code · the **keypad** jogs the axes by hand
 
 </div>
 </div>
