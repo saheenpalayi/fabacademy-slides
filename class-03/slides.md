@@ -141,6 +141,25 @@ big enough to show you can machine **safely**
 
 --
 
+### Protective equipment
+
+<div class="img-text">
+<img class="photo" src="images/ppe.jpg" alt="Ear defenders, safety goggles, dust mask and gloves" />
+<div>
+
+- 🎧 **Ear defenders** – routers are loud, wear them the whole time
+- 🥽 **Safety goggles** – chips and broken bits fly fast
+- 😷 **Dust mask** – fine MDF / plywood dust
+- 🧤 **Gloves** – for carrying sheets only, **take them off** before the machine runs
+
+</div>
+</div>
+
+Note:
+Pass the PPE around. Show where it's kept in the lab.
+
+--
+
 ### Rules while the machine runs
 
 - Know where the **emergency stop** is – before you start
